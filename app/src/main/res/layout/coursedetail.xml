@@ -1,0 +1,86 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".DeptActivity" android:id="@+id/relativeLayout">
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fillViewport="false"
+        android:id="@+id/txt">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:id="@+id/buttonLayout">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/SIS_COURSE_ID"
+            android:layout_alignTop="@+id/txt"
+            android:layout_centerHorizontal="true"
+            android:textSize="40dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/TITLE"
+            android:layout_below="@+id/SIS_COURSE_ID"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/DESCRIPTION"
+            android:layout_below="@+id/TITLE"
+            android:layout_alignLeft="@+id/TITLE"
+            android:layout_alignStart="@+id/TITLE"
+            android:layout_marginTop="40dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/MIN_UNITS"
+            android:layout_below="@+id/DESCRIPTION"
+            android:layout_alignLeft="@+id/buttonCoursebin"
+            android:layout_alignStart="@+id/buttonCoursebin"
+            android:layout_marginTop="40dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/MAX_UNITS"
+            android:layout_alignTop="@+id/MIN_UNITS"
+            android:layout_alignRight="@+id/buttonCoursebin"
+            android:layout_alignEnd="@+id/buttonCoursebin" />
+
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/DIVERSITY_FLAG"
+            android:layout_below="@+id/MIN_UNITS"
+            android:layout_alignLeft="@+id/MIN_UNITS"
+            android:layout_alignStart="@+id/MIN_UNITS" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add to Coursebin"
+            android:id="@+id/buttonCoursebin"
+            android:textSize="24dp"
+            android:layout_marginTop="10dp" />
+
+        </LinearLayout></ScrollView>
+
+</RelativeLayout>
